@@ -1,0 +1,37 @@
+class Cusomer:
+
+    def __init__(self, name, balance):
+        self.name = name
+        self.balance = balance
+    
+    def deposite(self, money):
+        self.balance += money
+    
+    def withdraw(self, money):
+        self.balance -= money
+
+
+class Bank(Customer):
+    customers = [ ]
+
+    def __init__(self, name, customers, balance, budget):
+        super().__init__(name, balance)
+        self.customers = customers
+        self.budget = budget
+
+    def add_customer(self, customer):
+        self.customers.append(self.customer)
+    
+    def remove_customer(self, customer):
+        self.customers.delete(self.customer)
+
+    def can_get_loan(self, cash, balance):
+        if self.balance < cash / 2:
+            return "True":
+        else return "False"
+
+    @property
+    def budget():
+        for i in customers:
+            self.budget += balance
+        return f"{self.budget}"
