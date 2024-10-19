@@ -20,10 +20,10 @@ class Bank(Customer):
         self.budget = budget
 
     def add_customer(self, customer):
-        self.customers.append(self.customer)
+        self.customers.append(customer)
     
     def remove_customer(self, customer):
-        self.customers.delete(self.customer)
+        self.customers.delete(customer)
 
     def can_get_loan(self, cash, balance):
         if self.balance < cash / 2:
